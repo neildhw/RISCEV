@@ -9,8 +9,8 @@
 uint64_t cnt = 0;
 
 
-int main() {
-  Vtop *to = new Vtop;
+int main() { 
+    Vtop *to = new Vtop;
   Verilated::traceEverOn(true);
   VerilatedVcdC *trace = new VerilatedVcdC;
   to->trace(trace, 5);

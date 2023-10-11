@@ -16,6 +16,10 @@ module top  (clk, res, D, load, Q, Qp);
   input load;
   output logic [31:0] Q;  
   output logic [31:0] Qp;
+  // wire 
+  // adder a0 (.in1(D), .in2(D), .out(Q));
+  // adder a1 (.in1(~D), .in2(~D), .out(Qp));
+
   always @(posedge clk) begin
     if(res)
       Q <= 0;
